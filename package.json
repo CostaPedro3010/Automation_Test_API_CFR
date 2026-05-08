@@ -1,0 +1,16 @@
+{
+  "name": "banco-carrefour-api-tests",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Automacao de testes de API para o desafio Banco Carrefour usando ServeRest.",
+  "type": "module",
+  "scripts": {
+    "test": "node --test --test-concurrency=1 \"tests/**/*.test.js\"",
+    "test:spec": "node --test --test-concurrency=1 --test-reporter=spec \"tests/**/*.test.js\"",
+    "test:junit": "node scripts/run-tests.mjs --junit",
+    "test:ci": "node scripts/run-tests.mjs --junit"
+  },
+  "engines": {
+    "node": ">=22"
+  }
+}
